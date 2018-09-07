@@ -1,1 +1,48 @@
-ejemplo
+1. Dibujo arbol
+
+(venv) andrea@........... $ tree tweetdemo
+
+tweetdemo
+    |-db.sqlite3
+    |-manage.py
+    |-tweetdemo
+        |-__init__.py
+        |-__pycache__
+            |-__init.cpython-36.pyc
+            |-settings.cpython-36.pyc
+            |-urls.cpython-36.pyc
+            |-wsgi.cpython-36.pyc
+        |-settings.py
+        |-urls.py
+        |-wsgi.py
+
+2. 3 argumentos 
+runserver
+migrate
+makemigrations
+
+3. Diferencia de global y local
+Las locales solo sirven dentro del archivo en donde estan
+Las globales sirven en toda la aplicacion 
+
+4. patron de vista en funcion 
+path('list_tweet/',views.list_tweet, name='list_tweet_view')
+
+5. patron de vista en clase
+path('List_Tweet/'views.List_Tweet.as_view)
+
+6. comando para hacer proyecto
+python manage.py startproject nombredelproyecto
+
+7. comando para hacer app
+python manage.py startapp nombredelaaplicacion
+
+8. para que sirve archivos settings.py
+para configurar el proyecto
+
+9. comando para registrar migraciones
+python manage.py migrate
+
+10. comando para sincronizar modelo con motor de bd
+python manage.py makemigrations
+
